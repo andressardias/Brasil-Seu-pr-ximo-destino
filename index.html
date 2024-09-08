@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Pré-conexão com o servidor de fontes do Google para melhorar o desempenho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Pré-conexão com o servidor de fontes do Google com política de segurança cruzada -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importação da fonte Montserrat Alternates do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!--Fonte Importada do GoogleFonts-->
+    <!-- Definição do charset para UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Viewport para garantir responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Título da página -->
+    <title>Brasil: Seu Próximo Destino:</title>
+</head>
+
+<body>
+    <!-- Vídeo de fundo com reprodução automática, sem som e em loop -->
+    <video autoplay muted loop src="./video/12065757-uhd_2560_1440_25fps.mp4">video-fundo</video>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Título principal da página -->
+        <h1>Destinos Brasileiros</h1>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+       <!-- Seção para a barra de pesquisa -->
+        <section>
+       <!-- Campo de entrada para o usuário digitar o destino desejado -->
+        <input type="text" placeholder="Para onde você quer ir?" id="campo-pesquisa">
+        <!-- Botão que, ao ser clicado, chama a função pesquisar -->
+        <button onclick="pesquisar()">Vamos lá!</button>
+        </section>
+        <!-- Seção onde os resultados da pesquisa serão exibidos -->
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+         <!-- Texto do rodapé -->
+        <p>A vida é uma grande aventura. Explore cada canto dela.
+        <br>Destinos Brasileiros © 2024. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!-- Inclusão do arquivo JavaScript com os dados dos destinos -->
+    <script src="dados.js"></script>
+    <!-- Inclusão do arquivo JavaScript que contém a lógica da aplicação -->
+    <script src="app.js"></script>  
+</body>
+
+</html>
